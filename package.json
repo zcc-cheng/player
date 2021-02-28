@@ -1,0 +1,26 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+  },
+  "author": "zcc",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.0.1",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "video.js": "^7.6.5"
+  },
+  "build": {
+    "appId": "player.app",
+    "productName": "PL播放器",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
